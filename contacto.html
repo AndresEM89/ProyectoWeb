@@ -36,23 +36,16 @@
         <img src="header-form-1.jpg" width="600px">
         <div class="formulario">
         <h2>Formulario de registro</h2>
-        <form class="form">
+        <form class="form" action="https://formspree.io/f/mpzenogz" method="POST">
             <label for="fistname">Nombre: </label>      <input type="text" name="fistname" placeholder="Ingrese su nombre aquí..."> <br><br>
             <label for="lastname">Apellido: </label>    <input type="text" name="lastname" placeholder="Ingrese su apellido aquí..."> <br><br>
-            <label>Adoptado</label>
-			          <select>
-				          <option>Snow</option>
-				          <option>Kaken</option>
-				          <option>Meena</option>
-				          <option>Vauquita</option>
-			          </select>
-                      <br><br>
+            <label for="adoptado">Adoptado:</label>  <input type="text" name="adoptado" placeholder="Ingrese el nombre de su patita adoptada..."<br><br>
             <label for="address">Dirección: </label>       <input type="text" name="address" placeholder="Ingrese su dirección aquí..."> <br><br>
             <label for="city">Ciudad:</label>           <input type="text" name="city" value="C.A.B.A."> <br><br>
             <label for="zipcode">Código Postal:</label> <input type="text" name="zipcode" placeholder="Ingrese su código postal aquí..."> <br><br>
             <label for="Birthdate">Fecha de Nacimiento (mm/dd/yyyyy):</label>   <input type="text" name="birthdate"> <br><br>
-            <p>Género
-                <input type="radio" name="gender" value="hombre" checked>Hombre
+            <p>Género</p>
+            <p> <input type="radio" name="gender" value="hombre" checked>Hombre
                 <input type="radio" name="gender" value="mujer">Mujer
                 <input type="radio" name="gender" value="otro">Otro
             </p>    
@@ -73,6 +66,7 @@
             </div>
         </footer>
     
+        
 </body>
 
 </html>
