@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
+.container {
+    background-color:white;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template: auto  1fr auto / 100vw;
+    min-height: 600px;
+    min-width: 400px;
+    grid-template-areas:  "header header header" "main main main" "footer footer footer";
+}
+
+
+
+
 a {
     color: black;
     text-decoration: none;
@@ -11,7 +25,7 @@ a.actual {
 }
 
 a:hover {
-    background-color: rgb(131, 130, 130);
+    background-color:cadetblue;
 }
 
 .boton {
@@ -86,6 +100,7 @@ footer {
     width: 100%;
     place-content: space-evenly;
     display: grid;
+    grid-area: footer;
 }
 
 
