@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
+.logoIndex{
+    
+    animation-name: rotarLogo;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
+        /* animation: cambiarColor 2s 1s; */ }
+    @keyframes rotarLogo {
+     
+       0%{ rotate: 360deg; }
+       80%{transform: scale(1.5,1.5)}
+        
+        
+        
+    }
+
+
 .container {
     background-color:white;
     text-align: center;
@@ -210,7 +227,7 @@ div.contenedor {
         display: inline;
     }
 
-    main > div.contenedor > img {
+    main > div.contenedor > iframe {
         display: none;
     }
     
