@@ -12,9 +12,9 @@
     <title>Patitas Adopciones</title>
 </head>
 
-<body class="container">
-
-        
+<!-- <body class="container"> -->
+<body>
+           
 <header>
     <div class="contenedor">
     <img src="picture/Patitas_adopciones.png" >
@@ -33,62 +33,32 @@
     </nav>
     </div>
 </header>
-<main>
-        <div class="adoptar">
-        <h1>Patitas por adoptar</h1>
-        <span>
-            <h2>Meena</h2>
-            <ul>
-                <li>Hembra</li>
-                <li>Tamaño: pequeño</li>
-                <li>Personalidad: mimoso</li>
-                <li>Peso:0,500</li>
-                <li>Años:2 m</li>
-                <li>Ubicación:Provincia de Buenos Aires</li>
-            </ul>
-            <img src="picture/meena.png" width="200px">
-            <p><a href="contacto.html" class="boton">Formulario de adopción</a></p>
-        <br><br>
-            <h2>Kankel</h2>
-            <ul>
-                <li>Macho</li>
-                <li>Tamaño: mediano</li>
-                <li>Personalidad: mimoso</li>
-                <li>Peso:1,5</li>
-                <li>Años:3 m</li>
-                <li>Ubicación: C.A.B.A.</li>
-            </ul>
-            <img src="picture/kaken.png" width="200px">
-            <p><a href="contacto.html" class="boton">Formulario de adopción</a></p>
-            <br><br>
-            <h2>Snow</h2>
-            <ul>
-                <li>Macho</li>
-                <li>Tamaño: pequeño</li>
-                <li>Personalidad: mimoso</li>
-                <li>Peso:0,450</li>
-                <li>Años:2 m</li>
-                <li>Ubicación:Provincia de Buenos Aires</li>
-            </ul>
-            <img src="picture/snow.png" width="200px">
-            <p><a href="contacto.html" class="boton">Formulario de adopción</a></p>
-            <br><br>
-            <h2>Vauquita</h2>
-            <ul>
-                <li>Hembra</li>
-                <li>Tamaño: pequeño</li>
-                <li>Personalidad: mimoso</li>
-                <li>Peso:1</li>
-                <li>Años:2 m</li>
-                <li>Ubicación: C.A.B.A.</li>
-            </ul>
-            <img src="picture/Vauquita.png" width="200px">
-            <p><a href="contacto.html" class="boton">Formulario de adopción</a></p>
-        </span>
-    
-        
+
+<!-- Esta parte es con fetch - veu -->
+<h1>Patitas para adoptar:</h1>
+<div id="app">
+    <div>
+        <!-- Itero sobre el array de personajes -->
+        <!-- Por cada personaje muestro su info asociada -->
+        <div v-for="personaje in personajes" class="tarjeta2">
+            <img :src="personaje.image.url" style="width:100%">
+           <div>
+                <h3> {{personaje.name}} </h3>
+                <p>ID: {{personaje.id}} - Tamaño: {{personaje.breed_group}}- Temperamento: {{personaje.temperament}}
+                    - Origen: {{personaje.origin}} </p>
+            </div>
         </div>
-</main>
+        <br>
+    </div>
+</div>
+
+<!--CDN de Vue, version de desarrollo -->
+<script src="https://unpkg.com/vue@next"></script>
+<!-- Nuestro script con Vue-->
+<script src="js/api.js"></script>
+
+
+
 
 <footer> 
     <div class="contenedor">
@@ -103,3 +73,10 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
